@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proekt</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app"></div>
+    <header class="header">
+        <h3 class="title"> 📝NOTES </h3>
+        <div class="svg">
+            <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 14H16" stroke="#457CDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 10H10" stroke="#457CDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 18H12" stroke="#457CDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 3H6C4.89543 3 4 3.89543 4 5V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V5C20 3.89543 19.1046 3 18 3H14.5M10 3V1M10 3V5" stroke="#457CDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="span-counter"></span>
+        </div>
+            
+        <!-- Ваш код -->
+    </header>
+    <main>
+        <form class="note-form" name="notes">
+            <div class="form-one">
+                <label class="label-name">
+                Название заметки
+            </label>
+            <input class="input-title" type="text" placeholder="Напишите название новой заметки...">
+            </div>
+            
+            <div class="one">
+                <div class="texterea">
+                    <label class="label-name2">
+                        Описание новой заметки
+                    </label>
+                    <textarea class="input-content" placeholder="Напишите описание новой заметки..."></textarea>
+                </div>
+                <div class="buttons">
+                    <fieldset class="fieldset">
+                        <legend class="label">Выберите цвет заметки</legend>
+                        <ul class="radio-list">
+                          <li>
+                            <input checked class="radio" type="radio" name="color" value="yellow" aria-label="yellow" />
+                          </li>
+                          <li>
+                            <input class="radio" type="radio" name="color" value="red" aria-label="red" />
+                          </li>
+                          <li>
+                            <input class="radio" type="radio" name="color" value="green" aria-label="green" />
+                          </li>
+                          <li>
+                            <input class="radio" type="radio" name="color" value="blue" aria-label="blue" />
+                          </li>
+                          <li>
+                            <input class="radio" type="radio" name="color" value="purple" aria-label="purple" />
+                          </li>
+                        </ul>
+                      </fieldset>
+                    <button type="submit" class="button"> + Добавить заметку </button>
+                </div>
+
+            </div>
+
+            <!-- Ваш код -->
+        </form>
+
+        <div class="filter-box">
+           
+            <!-- Ваш код -->
+        </div>
+        <ul class="notes-list">
+            <!-- Сюда будут рендерится заметки из JavaScript -->
+        </ul>
+
+        <div class="messages-box">
+            'У вас ещё нет ни одной заметки. Заполните поля выше и создайте свою первую заметку'
+            <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
+        </div>
+    </main>
+    <script src="jsColor.js"></script>
+</body>
+
+</html>
